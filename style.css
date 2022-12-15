@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #343434;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    height: 85%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.table-filter {
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper > .top, .wrapper > .bottom {
+    width: 100%;
+    display: grid;
+    row-gap: .3em;
+}
+.wrapper > .top {
+    grid-template-rows: repeat(7, 1fr);
+}
+.wrapper > .bottom {
+    grid-template-rows: 1fr 1fr;
+}
+.row {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+}
+.row-1 {
+    grid-template-columns: 1fr 16fr 1fr;
+}
+.row-2, .row-3 {
+    grid-template-columns: 1fr 1fr 10fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.row-8, .row-9 {
+    grid-template-columns: 2fr 1fr repeat(15, 1fr);
+}
+.nav {
+    width: 70%;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 0.8em;
+    width: 100%;
+}
+.element {
+    border-radius: 1px;
+    height: 70px;
+    width: 70px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2px;
+}
+.center {
+    display: grid;
+    place-items: center;
+    color: #fff !important;
+}
+.element .bottom  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.element .title {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.element .top, .name, .mass {
+    font-size: .65em;
+}
+
+.table .table-item.show{
+    animation: fadeIn 0.5s ease;
+  }
+  @keyframes fadeIn{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+.table-filter .filter-item{
+    color: #ffffff;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+.table-filter .filter-item:hover{
+    color: rgba(255, 255, 255, .8);
+    transform: scale(.95);
+}
+.table-filter .filter-item.active{
+    color: #5DA7DB;
+    border-color : #5DA7DB;
+}
+.table-item.hide{
+    opacity: 0.3;
+}
+
+.Alkali-Metals {
+    border-color: orange;
+    color: orange;    
+}
+.Alkaline-Earth-Metals {
+    border-color: yellow;
+    color: yellow;
+}
+.Lanthanoids {
+    border-color: pink;
+    color: pink;
+}
+.Aktinoids {
+    border-color: blueviolet;
+    color: blueviolet;
+}
+.Transition-Metals {
+    border-color: lightcoral;
+    color: lightcoral;
+}
+.Post-Transition-Metals {
+    border-color: lightblue;
+    color: lightblue;
+}
+.Metaloids {
+    border-color: lightseagreen;
+    color: lightseagreen;
+}
+.Other-Nonmetals {
+    border-color: lightgreen;
+    color: lightgreen;
+}
+.Noble-Gasses {
+    border-color: blue;
+    color: blue;
+}
+.Unknown {
+    border-color: gray;
+    color: gray;
+}

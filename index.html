@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Periodic Table</title>
+</head>
+<body>
+    <div class="nav">
+        <ul class="table-filter">
+            <li class="filter-item active" data-filter="All">All</li>
+            <li class="filter-item" data-filter="Alkali-Metals">Alkali Metals</li>
+            <li class="filter-item" data-filter="Alkaline-Earth-Metals">Alkaline Earth Metals</li>
+            <li class="filter-item" data-filter="Lanthanoids">Lanthanoids</li>
+            <li class="filter-item" data-filter="Aktinoids">Aktinoids</li>
+            <li class="filter-item" data-filter="Transition-Metals">Transition Metals</li>
+            <li class="filter-item" data-filter="Post-Transition-Metals">Post-Transition Metals</li>
+            <li class="filter-item" data-filter="Metaloids">Metaloids</li>
+            <li class="filter-item" data-filter="Other-Nonmetals">Other Nonmetals</li>
+            <li class="filter-item" data-filter="Noble-Gasses">Noble Gasses</li>
+            <li class="filter-item" data-filter="Unknown">Unknown</li>
+        </ul>
+    </div>
+    <div class="wrapper table">
+        <div class="top">
+            <div class="row row-1">
+                <div id='1' class="element table-item Other-Nonmetals"></div>
+                <div class="empty"></div>
+                <div id='2' class="element table-item Noble-Gasses"></div>
+            </div>
+            <div class="row row-2">
+                <div id='3' class="element table-item Alkali-Metals"></div>
+                <div id='4' class="element table-item Alkaline-Earth-Metals"></div>
+                <div class="empty"></div>
+                <div id='5' class="element table-item Metaloids"></div>
+                <div id='6' class="element table-item Other-Nonmetals"></div>
+                <div id='7' class="element table-item Other-Nonmetals"></div>
+                <div id='8' class="element table-item Other-Nonmetals"></div>
+                <div id='9' class="element table-item Other-Nonmetals"></div>
+                <div id='10' class="element table-item Noble-Gasses"></div>
+            </div>
+            <div class="row row-3">
+                <div id='11' class="element table-item Alkali-Metals"></div>
+                <div id='12' class="element table-item Alkaline-Earth-Metals"></div>
+                <div class="empty"></div>
+                <div id='13' class="element table-item Post-Transition-Metals"></div>
+                <div id='14' class="element table-item Metaloids"></div>
+                <div id='15' class="element table-item Other-Nonmetals"></div>
+                <div id='16' class="element table-item Other-Nonmetals"></div>
+                <div id='17' class="element table-item Other-Nonmetals"></div>
+                <div id='18' class="element table-item Noble-Gasses"></div>
+            </div>
+            <div class="row row-4">
+                <div id='19' class="element table-item Alkali-Metals"></div>
+                <div id='20' class="element table-item Alkaline-Earth-Metals"></div>
+                <div id='21' class="element table-item Transition-Metals"></div>
+                <div id='22' class="element table-item Transition-Metals"></div>
+                <div id='23' class="element table-item Transition-Metals"></div>
+                <div id='24' class="element table-item Transition-Metals"></div>
+                <div id='25' class="element table-item Transition-Metals"></div>
+                <div id='26' class="element table-item Transition-Metals"></div>
+                <div id='27' class="element table-item Transition-Metals"></div>
+                <div id='28' class="element table-item Transition-Metals"></div>
+                <div id='29' class="element table-item Transition-Metals"></div>
+                <div id='30' class="element table-item Transition-Metals"></div>
+                <div id='31' class="element table-item Post-Transition-Metals"></div>
+                <div id='32' class="element table-item Metaloids"></div>
+                <div id='33' class="element table-item Metaloids"></div>
+                <div id='34' class="element table-item Other-Nonmetals"></div>
+                <div id='35' class="element table-item Other-Nonmetals"></div>
+                <div id='36' class="element table-item Noble-Gasses"></div>
+            </div>
+            <div class="row row-5">
+                <div id='37' class="element table-item Alkali-Metals"></div>
+                <div id='38' class="element table-item Alkaline-Earth-Metals"></div>
+                <div id='39' class="element table-item Transition-Metals"></div>
+                <div id='40' class="element table-item Transition-Metals"></div>
+                <div id='41' class="element table-item Transition-Metals"></div>
+                <div id='42' class="element table-item Transition-Metals"></div>
+                <div id='43' class="element table-item Transition-Metals"></div>
+                <div id='44' class="element table-item Transition-Metals"></div>
+                <div id='45' class="element table-item Transition-Metals"></div>
+                <div id='46' class="element table-item Transition-Metals"></div>
+                <div id='47' class="element table-item Transition-Metals"></div>
+                <div id='48' class="element table-item Transition-Metals"></div>
+                <div id='49' class="element table-item Post-Transition-Metals"></div>
+                <div id='50' class="element table-item Post-Transition-Metals"></div>
+                <div id='51' class="element table-item Metaloids"></div>
+                <div id='52' class="element table-item Metaloids"></div>
+                <div id='53' class="element table-item Other-Nonmetals"></div>
+                <div id='54' class="element table-item Noble-Gasses"></div>
+            </div>
+            <div class="row row-6">
+                <div id='55' class="element table-item Alkali-Metals"></div>
+                <div id='56' class="element table-item Alkaline-Earth-Metals"></div>
+                <div class="element table-item center">57-71</div>
+                <div id='72' class="element table-item Transition-Metals"></div>
+                <div id='73' class="element table-item Transition-Metals"></div>
+                <div id='74' class="element table-item Transition-Metals"></div>
+                <div id='75' class="element table-item Transition-Metals"></div>
+                <div id='76' class="element table-item Transition-Metals"></div>
+                <div id='77' class="element table-item Transition-Metals"></div>
+                <div id='78' class="element table-item Transition-Metals"></div>
+                <div id='79' class="element table-item Transition-Metals"></div>
+                <div id='80' class="element table-item Transition-Metals"></div>
+                <div id='81' class="element table-item Post-Transition-Metals"></div>
+                <div id='82' class="element table-item Post-Transition-Metals"></div>
+                <div id='83' class="element table-item Post-Transition-Metals"></div>
+                <div id='84' class="element table-item Post-Transition-Metals"></div>
+                <div id='85' class="element table-item Metaloids"></div>
+                <div id='86' class="element table-item Noble-Gasses"></div>
+            </div>
+            <div class="row row-7">
+                <div id='87' class="element table-item Alkali-Metals"></div>
+                <div id='88' class="element table-item Alkaline-Earth-Metals"></div>
+                <div class="element table-item center">89-103</div>
+                <div id='104' class="element table-item Transition-Metals"></div>
+                <div id='105' class="element table-item Transition-Metals"></div>
+                <div id='106' class="element table-item Transition-Metals"></div>
+                <div id='107' class="element table-item Transition-Metals"></div>
+                <div id='108' class="element table-item Transition-Metals"></div>
+                <div id='109' class="element table-item Unknown"></div>
+                <div id='110' class="element table-item Unknown"></div>
+                <div id='111' class="element table-item Unknown"></div>
+                <div id='112' class="element table-item Transition-Metals"></div>
+                <div id='113' class="element table-item Unknown"></div>
+                <div id='114' class="element table-item Post-Transition-Metals"></div>
+                <div id='115' class="element table-item Unknown"></div>
+                <div id='116' class="element table-item Unknown"></div>
+                <div id='117' class="element table-item Unknown"></div>
+                <div id='118' class="element table-item Unknown"></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="row row-8">
+                <div class="empty"></div>
+                <div class="center table-item Lanthanoids">57-71</div>
+                <div id='57' class="element table-item Lanthanoids"></div>
+                <div id='58' class="element table-item Lanthanoids"></div>
+                <div id='59' class="element table-item Lanthanoids"></div>
+                <div id='60' class="element table-item Lanthanoids"></div>
+                <div id='61' class="element table-item Lanthanoids"></div>
+                <div id='62' class="element table-item Lanthanoids"></div>
+                <div id='63' class="element table-item Lanthanoids"></div>
+                <div id='64' class="element table-item Lanthanoids"></div>
+                <div id='65' class="element table-item Lanthanoids"></div>
+                <div id='66' class="element table-item Lanthanoids"></div>
+                <div id='67' class="element table-item Lanthanoids"></div>
+                <div id='68' class="element table-item Lanthanoids"></div>
+                <div id='69' class="element table-item Lanthanoids"></div>
+                <div id='70' class="element table-item Lanthanoids"></div>
+                <div id='71' class="element table-item Lanthanoids"></div>
+            </div>
+            <div class="row row-9">
+                <div class="empty"></div>
+                <div class="center table-item Aktinoids">89-103</div>
+                <div id='89' class="element table-item Aktinoids"></div>
+                <div id='90' class="element table-item Aktinoids"></div>
+                <div id='91' class="element table-item Aktinoids"></div>
+                <div id='92' class="element table-item Aktinoids"></div>
+                <div id='93' class="element table-item Aktinoids"></div>
+                <div id='94' class="element table-item Aktinoids"></div>
+                <div id='95' class="element table-item Aktinoids"></div>
+                <div id='96' class="element table-item Aktinoids"></div>
+                <div id='97' class="element table-item Aktinoids"></div>
+                <div id='98' class="element table-item Aktinoids"></div>
+                <div id='99' class="element table-item Aktinoids"></div>
+                <div id='100' class="element table-item Aktinoids"></div>
+                <div id='101' class="element table-item Aktinoids"></div>
+                <div id='102' class="element table-item Aktinoids"></div>
+                <div id='103' class="element table-item Aktinoids"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
